@@ -42,7 +42,9 @@ dependencies:
   google_sign_in: ^6.1.5
   google_maps_flutter: ^2.5.0
   curved_navigation_bar: ^1.0.3
-  flutter_lints: ^2.0.3
+  # flutter_lints: ^2.0.3
+  firebase_messaging: ^14.6.8
+  flutter_local_notifications: ^15.1.1
 
 dev_dependencies:
   flutter_test:

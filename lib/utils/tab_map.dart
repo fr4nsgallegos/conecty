@@ -3,7 +3,6 @@ import 'package:conecty/pages/list_page.dart';
 import 'package:conecty/pages/login_view.dart';
 import 'package:conecty/pages/map_page.dart';
 import 'package:conecty/pages/stream_page.dart';
-import 'package:conecty/pages/stream_page2.dart';
 
 final List<Map<String, dynamic>> pageDetails = [
   {

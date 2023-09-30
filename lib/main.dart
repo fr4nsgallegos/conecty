@@ -1,24 +1,24 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:conecty/feed_page.dart';
-import 'package:conecty/pages/home_page.dart';
 import 'package:conecty/pages/list_page.dart';
-import 'package:conecty/pages/login_view.dart';
-import 'package:conecty/pages/map_page.dart';
-import 'package:conecty/pages/stream_page.dart';
-import 'package:conecty/pages/stream_page2.dart';
+import 'package:conecty/pages/notification_page.dart';
 import 'package:conecty/pages/stream_page3.dart';
-import 'package:conecty/pages/tab_bar_page.dart';
+import 'package:conecty/utils/notification_service.dart';
+import 'package:conecty/utils/notification_service2.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
+  await NotificationService2.initMessaging();
   runApp(MaterialApp(
     title: 'Navigation Basics',
     // home: MyApp(),
     // home: loginView(),
-    home: TabBarScreen(),
+    // home: TabBarScreen(),
+    // home: ListPage(bgColor: Colors.white),
+    home: NotificationPage(),
   ));
 }
 

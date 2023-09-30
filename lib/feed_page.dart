@@ -1,7 +1,5 @@
 import 'package:conecty/models/feed.dart';
-import 'package:conecty/widgets/feed_card1.dart';
 import 'package:conecty/widgets/feed_card2.dart';
-import 'package:conecty/widgets/feed_card3.dart';
 import 'package:flutter/material.dart';
 
 class FeedPage extends StatelessWidget {

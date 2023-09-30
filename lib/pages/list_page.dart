@@ -29,13 +29,13 @@ class ListPage extends StatelessWidget {
                 Map<String, dynamic> myDoc =
                     docs[index].data() as Map<String, dynamic>;
                 myDoc["id"] = docs[index].id;
-                print(myDoc);
+                // print(myDoc);
                 return ListTile(
                   title: Text(
                     myDoc["nombre"],
                   ),
                   // subtitle: Text(docs[index].id),
-                  subtitle: Text(myDoc["id"]),
+                  // subtitle: Text(myDoc["id"]),ubs
                 );
               },
             );
